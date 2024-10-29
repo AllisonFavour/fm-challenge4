@@ -1,0 +1,163 @@
+/* CSS RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* variables for colors and font */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone100: hsl(30, 54%, 90%);
+  --stone150: hsl(30, 18%, 87%);
+  --stone600: hsl(30, 10%, 34%);
+  --stone900: hsl(24, 5%, 18%);
+  --brown800: hsl(14, 45%, 36%);
+  --rose50: hsl(330, 100%, 98%);
+  --rose800: hsl(332, 51%, 32%);
+  --outfit-font: "Outfit", sans-serif;
+  --young-serif-font: "Young Serif", serif;
+}
+
+body {
+  font-family: var(--outfit-font), var(--young-serif-font);
+  background-color: var(--white);
+}
+
+/* main section holding everything */
+.main {
+  min-width: 320px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* styles for image */
+.img {
+  padding: 40px 40px 0;
+}
+
+.img > img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* styles for the contents after image */
+.contents {
+  color: var(--stone600);
+  padding: 40px;
+}
+
+.contents > h1 {
+  color: var(--stone900);
+  font-family: var(--young-serif-font);
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.contents > p {
+  color: var(--stone600);
+  font-size: 18px;
+}
+
+/* this style applies to all elements with the class name of flex */
+.flex {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* styles for preparation time section */
+
+.prep-time {
+  background-color: var(--rose50);
+  padding: 20px;
+  border-radius: 6px;
+  margin: 20px 0;
+}
+
+.prep-time > p {
+  color: var(--rose800);
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.prep-time > ul {
+  margin-left: 20px;
+}
+
+.prep-time > ul li::marker {
+  color: var(--rose800);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.ingredients,
+.instructions {
+  padding: 10px 0 20px;
+  border-bottom: 1px solid var(--stone150);
+}
+
+.ingredients > h2,
+.instructions > h2,
+.nutrition > h2 {
+  color: var(--brown800);
+  font-size: 28px;
+  font-family: var(--young-serif-font);
+  margin-bottom: 12px;
+}
+
+.ingredients > ul,
+.instructions > ol {
+  margin-left: 20px;
+}
+
+.ingredients > ul li::marker,
+.instructions > ol li::marker {
+  color: var(--brown800);
+}
+
+/* styles for nutrition section */
+.nutrition {
+  margin: 14px 0 0;
+}
+
+.nutrition > h3 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.table-flex {
+    display: flex;
+    border-bottom: 1px solid var(--stone150);
+}
+
+.table-flex span {
+    width: 50%;
+    margin: 10px 0 10px 20px;
+}
+
+.table-flex .brown {
+    color: var(--brown800);
+    font-weight: 700;
+}
+
+.table-flex:last-child {
+  border-bottom: none;
+}
+
+/* media query to handle small screens of 480px below */
+@media screen and (max-width: 480px) {
+  .img {
+    padding: 0;
+  }
+
+  .img > img {
+    border-radius: initial;
+  }
+}
