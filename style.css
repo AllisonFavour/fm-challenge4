@@ -61,14 +61,13 @@ body {
   font-size: 18px;
 }
 
-/* this style applies to all elements with the class name of flex */
-.flex {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
-}
 
 /* styles for preparation time section */
+/* adding margin bottom to all the list items and padding left */
+li {
+  margin-bottom: 12px;
+  padding-left: 8px;
+}
 
 .prep-time {
   background-color: var(--rose50);
@@ -127,24 +126,24 @@ body {
 }
 
 .nutrition > h3 {
-    font-size: 22px;
-    font-weight: 400;
-    margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .table-flex {
-    display: flex;
-    border-bottom: 1px solid var(--stone150);
+  display: flex;
+  border-bottom: 1px solid var(--stone150);
 }
 
 .table-flex span {
-    width: 50%;
-    margin: 10px 0 10px 20px;
+  width: 50%;
+  margin: 10px 0 10px 20px;
 }
 
 .table-flex .brown {
-    color: var(--brown800);
-    font-weight: 700;
+  color: var(--brown800);
+  font-weight: 700;
 }
 
 .table-flex:last-child {
